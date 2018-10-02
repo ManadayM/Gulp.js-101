@@ -12,6 +12,15 @@
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
+		<style>
+			.coding-text {
+				font-family: Consolas, monospace !important;
+			}
+			.terminal-text {
+				color: #17ff2e !important;
+			}
+		</style>
+
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -24,8 +33,127 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<!-- Title slide -->
+				<section>
+					<h1>Gulp.js 101</h1>
+					<p>
+						<small>Prepared by <a href="http://twitter.com/ManadayM">Manaday Mavani</a></small>
+					</p>
+				</section>
+
+				<!-- Agenda -->
+				<section>
+					<h1>Agenda</h1>
+					<p>
+						<span class="fragment terminal-text">Introduction, </span>
+						<span class="fragment terminal-text">Installation, </span>
+						<span class="fragment terminal-text">Implementation, </span>
+						<span class="fragment terminal-text">Impact</span>
+					</p>
+				</section>
+
+				<!-- Introduction -->
+				<section>
+					<section>
+						<h1>Introduction</h1>
+					</section>
+
+					<!-- 10,000 foot view -->
+					<section>
+						<h3>10,000 foot view</h3>
+						<p class="terminal-text">A task runner</p>
+					</section>
+
+					<!-- 5,000 foot view -->
+					<section>
+						<h3>5,000 foot view</h3>
+						<p class="terminal-text">A tool to automate and enhance your workflow</p>
+					</section>
+					
+					<!-- 1,000 foot view -->
+					<section>
+						<h3>1,000 foot view</h3>
+						<p class="terminal-text">A tool that can do (but not limited to):</p>
+						<ul>
+							<li class="fragment highlight-current-green"><span class="coding-text terminal-text"></span> Compress front-end resources</li>
+							<li class="fragment highlight-current-green"><span class="coding-text terminal-text"></span> Concatenation</li>
+							<li class="fragment highlight-current-green"><span class="coding-text terminal-text"></span> SASS to CSS</li>
+							<li class="fragment highlight-current-green"><span class="coding-text terminal-text"></span> Transpiling - ES5+ to ES5</li>
+							<li class="fragment highlight-current-green"><span class="coding-text terminal-text"></span> Image optimization</li>
+							<li class="fragment highlight-current-green"><span class="coding-text terminal-text"></span> Live reload</li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- Installation -->
+				<section data-background-image="./images/gulp-setup.gif" data-background-opacity="0.6">
+					<h1>Installation</h1>
+				</section>
+
+				<!-- Implementation -->
+				<section>
+					<section>
+						<h1>Implementation</h1>
+					</section>
+
+					<section>
+						<h3>Building blocks</h3>
+						<ul>
+							<li><span class="coding-text terminal-text">task</span> - Unit of work for the repetitive common activities</li>
+							<li><span class="coding-text terminal-text">src</span> - Source from which files need to be processed</li>
+							<li><span class="coding-text terminal-text">pipe</span> - Adds a function to the Node stream (Excellent article on this topic <a href="https://florian.ec/articles/gulp-js-streams/">florian.ec</a>)</li>
+							<li><span class="coding-text terminal-text">dest</span> - Dumping zone</li>
+							<li><span class="coding-text terminal-text">watch</span> - Monitor</li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- Impact -->
+				<section>
+					<section>
+						<h1>Impact</h1>
+					</section>
+					<section>
+						<h3>Towards Better UX</h3>
+						<ul>
+							<li class="fragment"><span class="coding-text terminal-text">Automation</span> - Automated front-end workflow in place</li>
+							<li class="fragment"><span class="coding-text terminal-text">Speed</span> - Faster page loads</li>
+							<li class="fragment"><span class="coding-text terminal-text">Requests</span> - Reduced number of requests</li>
+							<li class="fragment"><span class="coding-text terminal-text">Cache</span> - Effective cache purging mechanism</li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- Articles -->
+				<section>
+					<h3>Articles worth checking</h3>
+					<ul>
+						<li><a href="https://investis.udemy.com/learn-gulp">Gulp.js Udemy Course by Andrew Mead</a></span></li>
+						<li><a href="https://florian.ec/articles/gulp-js-streams/">Streams in Gulp.js</a></span></li>
+						<li><a href="https://github.com/isaacs/node-glob#glob-primer">Understanding Globs</a></span></li>
+						<li><a href="https://github.com/gulpjs/vinyl-fs">Vinyl Objects</a></span></li>
+						<li><a href="https://www.smashingmagazine.com/2018/01/front-end-performance-checklist-2018-pdf-pages/">Front-end Performance Checklist 2018</a></li>
+						<li><a href="https://fettblog.eu/gulp-4-parallel-and-series/">Task execution system - Gulp 3 and 4</a></span></li>
+						<li><a href="https://codeburst.io/switching-to-gulp-4-0-271ae63530c0">Gulp 3 to 4</a></span></li>
+					</ul>
+				</section>
+
+				<!-- Courses & Tuts -->
+				<section>
+					<h3>Courses & Ready materials</h3>
+					<ul>
+						<li><a href="https://investis.udemy.com/learn-gulp">Gulp.js Udemy Course by Andrew Mead</a></span></li>
+						<li><a href="https://github.com/gulpjs/gulp/tree/master/docs/recipes">Gulp.js Recipes</a></span></li>
+						<li><a href="https://github.com/google/web-starter-kit/blob/master/gulpfile.babel.js">Google Web Starter Kit's Advanced Gulp Implementation</a></span></li>
+					</ul>
+				</section>
+
+				<!-- Thank you -->
+				<section>
+					<h1 class="terminal-text">¯\_(ツ)_/¯</h1>
+					<h2>Thank you</h2>
+					<small>Any easy questions?</small>
+				</section>
 			</div>
 		</div>
 
@@ -37,6 +165,8 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				progress: false,
+				slideNumber: true,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
